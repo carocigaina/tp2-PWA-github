@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Carolina Cigaina - Cátedra PWA</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="favicon/x-icon" href="imagen/favicon.jpg"/>
+        <link rel="stylesheet" type="text/css" href="css/main.css"/>
+        <!-- Bootstrap CDN -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!-- linkeo libreria de dexie CDN -->
+        <script src="https://unpkg.com/dexie/dist/dexie.js"></script>
+            <link rel="manifest" href="manifest.json"/>
+
+    </head>
+    <body id="body">
+        <header>
+          <nav class="navbar navbar-expand-lg navbar-light bg-light" id="barra" >
+            <a class="navbar-brand" href="#">Movie Web</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="mirar.html">Por mirar</a>
+                <a class="nav-item nav-link" href="trailers.html">Trailers de peliculas</a>
+                
+              </div>
+            </div>
+          </nav>
+        </header>
+        <!--offline-->
+        <div class="container mt-5">
+          <div class="d-none" id="offline">
+          <h1>Mientras vuelve la conexión, te mostramos los próximos estrenos:</h1>
+          <video src="/video/estreno.mp4" width="320" height="240" controls autoplay>
+          </video>
+          </div>
+        </div>
+        
+
+        <main role="main" class="container" id="main-container">
+        <div class="container mt-5" >
+            <section class="contact-form">
+                <h1>Busque una pelicula o serie</h1>
+
+                <form id="contact-form " class="mt-5">
+                    <label for="search">Ingrese una titulo de la pelicula o serie:</label>
+                    <input title="Search" id="search" value="" type="text" required />
+
+                    <button id="sendButton" type="button" class="btn btn-light">Enviar</button>
+                </form>
+            </section>
+        </div>
+
+        
+        <div id="main" class="container mt-5">
+            <div class="row">
+            <div class="card col-12 col-md-12 d-flex justify-content-center" style="width: 18rem;">
+                <img src="imagen/peliculas.jpg" class="card-img-top" alt="Imagen de la pelicula o serie" id="img">
+                <div class="card-body">
+                  <h2 class="card-title">Resultados del titulo seleccionado:</h2>
+                
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item" id="li1">Titulo: </li>
+                  <li class="list-group-item" id="li2">Sinopsis: </li>
+                  <li class="list-group-item" id="li3">Score: </li>
+                    <li class="list-group-item" id="li4">Año: </li>
+
+
+                </ul>
+                
+                <p>Desea agregar o quitar esta pelicula de la lista por ver?</p>
+                <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                    <button type="button" class="btn btn-danger">Quitar</button>
+                    <button type="button" class="btn btn-success">Agregar</button>
+                </div>
+                
+              </div>
+              
+            </div>
+        </div>
+      </main>
+     
+      <script src="js/register-sw.js"></script> 
+        <script src="js/main.js"></script> 
+         
+    </body>
+    
+</html>
