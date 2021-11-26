@@ -16,6 +16,7 @@
     </head>
     <body id="body">
         <header>
+          
           <nav class="navbar navbar-expand-lg navbar-light bg-light" id="barra" >
             <a class="navbar-brand" href="#">Movie Web</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,13 +24,14 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" href="mirar.html">Por mirar</a>
-                <a class="nav-item nav-link" href="trailers.html">Trailers de peliculas</a>
+                <a class="nav-item nav-link active" href="#home">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#mirar">Por mirar</a>
+                <a class="nav-item nav-link" href="#trailers">Trailers de peliculas</a>
                 
               </div>
             </div>
           </nav>
+          
         </header>
         <!--offline-->
         <div class="container mt-5">
@@ -42,7 +44,7 @@
         
 
         <main role="main" class="container" id="main-container">
-        <div class="container mt-5" >
+        <div class="container mt-5" id="home">
             <section class="contact-form">
                 <h1>Busque una pelicula o serie</h1>
 
@@ -58,7 +60,7 @@
         
         <div id="main" class="container mt-5">
             <div class="row">
-            <div class="card col-12 col-md-12 d-flex justify-content-center" style="width: 18rem;">
+            <div class="card col-12 col-md-12 d-flex justify-content-center divpelicula" style="width: 18rem;">
                 <img src="imagen/peliculas.jpg" class="card-img-top" alt="Imagen de la pelicula o serie" id="img">
                 <div class="card-body">
                   <h2 class="card-title">Resultados del titulo seleccionado:</h2>
@@ -73,16 +75,32 @@
 
                 </ul>
                 
-                <p>Desea agregar o quitar esta pelicula de la lista por ver?</p>
+                <p>Desea agregar esta pelicula de la lista por ver?</p>
                 <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                    <button type="button" class="btn btn-danger">Quitar</button>
-                    <button type="button" class="btn btn-success">Agregar</button>
+                    <button type="button" class="btn btn-info" id="btnagregar">Agregar</button>
+                    
                 </div>
                 
               </div>
               
             </div>
         </div>
+        <div class="container mt-5" id="mirar">
+      
+              <h1>Pelicula o serie que fue guardada para ver más tarde:</h1>
+        <div class="row divmirar">
+
+        </div>
+      </div>
+
+      
+      <div class="container mt-5" id="trailers">
+      
+        <h1>Estos son los nuevos trailers:</h1>
+  <div class="row ">
+
+  </div>
+</div>
       </main>
      
       <script src="js/register-sw.js"></script> 
