@@ -139,7 +139,7 @@ function imprimirTodos(todos){
     <li class="list-group-item" >Score: ${peliculas.score}</li>
     <li class="list-group-item" >Año: ${peliculas.fecha}</li>
   </ul>
-  <button type="button" class="btn btn-danger borrar" id="${peliculas.id}">Eliminar</button>
+  <button type="button" class="btn btn-danger borrar mb-4" id="${peliculas.id}">Eliminar</button>
   </div>
   </div>`;
   });
