@@ -1,5 +1,5 @@
 const API_KEY = "e6446419"; // PEGUEN ACA SU API KEY!!
-const URL = "http://www.omdbapi.com/";
+const URL = "https://www.omdbapi.com/";
 
 /*
 window.addEventListener("offline", (event) => {
