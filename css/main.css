@@ -40,7 +40,10 @@ label{
 #body{
     background-color: #67668f;
 }
-
+#estado{
+    
+    font-size: 1.1em;
+}
 input#search {
     height: 35px;
 }

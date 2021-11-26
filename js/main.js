@@ -1,38 +1,29 @@
 const API_KEY = "e6446419"; // PEGUEN ACA SU API KEY!!
 const URL = "https://www.omdbapi.com/";
 
-/*
-window.addEventListener("offline", (event) => {
-    console.log("estoy offline");
-    document.getElementById("barra").classList.add('offline');
-    
-});
-window.addEventListener("online", (event) => {
-    console.log("estoy online");
-    document.getElementById("barra").classList.remove('online');
-});
-if(!navigator.onLine){
-    console.log("estoy sin conexion");
-    document.getElementById("barra").classList.add('offline');
-    
-}
-*/
+
+var estado=document.getElementById("estado");
 // Escucho si el usuario se desconecta, y ejecuto algo
 window.addEventListener("offline", (event) => {
     document.getElementById('offline').classList.remove('d-none');
     document.getElementById("main-container").classList.add('d-none');
+    estado.innerHTML='Estas sin conexion!';
   });
   
   // Escucho si el usuario tiene conexion
   window.addEventListener("online", (event) => {
     document.getElementById("offline").classList.add("d-none");
     document.getElementById("main-container").classList.remove("d-none");
+    estado.innerHTML='Estas con conexion!';
   });
   
   // Escucho si el navegador esta online o no, util en los casos que entro sin conexion.
   if (!navigator.onLine) {
     
     console.log("estoy sin conexion!!");
+    estado.innerHTML='Estas sin conexion!';
+  }else{
+    estado.innerHTML='Estas con conexion!';
   }
 
 
