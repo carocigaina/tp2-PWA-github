@@ -133,7 +133,11 @@ function imprimirTodos(todos){
   var html = '';
   
   todos.forEach(function(peliculas){
-    html+= `<div class="card col-6 col-md-6 d-flex justify-content-center" >
+    html+= `
+    <div class="row ">
+    
+    <h2>Pelicula o serie que fue guardada para ver más tarde:</h2>
+    <div class="card col-6 col-md-6 d-flex justify-content-center mt-5" >
     <img src="${peliculas.poster}" class="card-img-top" id="img">
     <ul class="list-group list-group-flush">
     <li class="list-group-item" >Titulo: ${peliculas.titulo}</li>
@@ -142,6 +146,7 @@ function imprimirTodos(todos){
     <li class="list-group-item" >Año: ${peliculas.fecha}</li>
   </ul>
   <button type="button" class="btn btn-danger borrar" id="${peliculas.id}">Eliminar</button>
+  </div>
   </div>`;
   });
 
