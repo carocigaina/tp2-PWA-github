@@ -8,6 +8,7 @@ window.addEventListener("offline", (event) => {
     document.getElementById('offline').classList.remove('d-none');
     document.getElementById("main-container").classList.add('d-none');
     estado.innerHTML='Estas sin conexion!';
+    estado.style.color = "#AA0000";
   });
   
   // Escucho si el usuario tiene conexion
@@ -15,6 +16,7 @@ window.addEventListener("offline", (event) => {
     document.getElementById("offline").classList.add("d-none");
     document.getElementById("main-container").classList.remove("d-none");
     estado.innerHTML='Estas con conexion!';
+    estado.style.color = "#25B441";
   });
   
   // Escucho si el navegador esta online o no, util en los casos que entro sin conexion.
@@ -22,8 +24,10 @@ window.addEventListener("offline", (event) => {
     
     console.log("estoy sin conexion!!");
     estado.innerHTML='Estas sin conexion!';
+    estado.style.color = "#AA0000";
   }else{
     estado.innerHTML='Estas con conexion!';
+    estado.style.color = "#25B441";
   }
 
 
