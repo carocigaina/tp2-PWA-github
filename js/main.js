@@ -133,7 +133,7 @@ function imprimirTodos(todos){
   var html = '';
   
   todos.forEach(function(peliculas){
-    html+= `<div class="card col-12 col-md-12 d-flex justify-content-center" style="width: 18rem;">
+    html+= `<div class="card col-6 col-md-6 d-flex justify-content-center" >
     <img src="${peliculas.poster}" class="card-img-top" id="img">
     <ul class="list-group list-group-flush">
     <li class="list-group-item" >Titulo: ${peliculas.titulo}</li>
