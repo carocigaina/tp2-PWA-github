@@ -37,6 +37,7 @@ window.addEventListener("offline", (event) => {
   }
 
 
+
 var input=document.getElementById('search');
 var boton=document.getElementById('sendButton');
 var main=document.getElementById('main');

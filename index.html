@@ -30,16 +30,19 @@
                 
               </div>
             </div>
+
           </nav>
           
         </header>
         <!--offline-->
         <div class="container mt-5">
           <div class="d-none" id="offline">
-          <h1>Mientras vuelve la conexión, te mostramos los próximos estrenos:</h1>
+          <h3>Mientras vuelve la conexión, te mostramos los próximos estrenos:</h3>
           <video src="/video/estreno.mp4" width="320" height="240" controls >
           </video>
           </div>
+          <div class="d-none" id="online"><p >Estas conectado!</p></div>
+          
         </div>
         
 
@@ -47,7 +50,7 @@
         <div class="container mt-5" id="home">
             <section class="contact-form">
                 <h1>Busque una pelicula o serie</h1>
-
+                
                 <form id="contact-form " class="mt-5">
                     <label for="search">Ingrese una titulo de la pelicula o serie:</label>
                     <input title="Search" id="search" value="" type="text" required />
@@ -63,7 +66,7 @@
             <div class="card col-12 col-md-12 d-flex justify-content-center divpelicula" style="width: 18rem;">
                 <img src="imagen/peliculas.jpg" class="card-img-top" alt="Imagen de la pelicula o serie" id="img">
                 <div class="card-body">
-                  <h2 class="card-title">Resultados del titulo seleccionado:</h2>
+                  <h3 class="card-title">Resultados del titulo seleccionado:</h3>
                 
                 </div>
                 <ul class="list-group list-group-flush">
@@ -87,7 +90,7 @@
         </div>
         <div class="container mt-5" id="mirar">
       
-              <h1>Pelicula o serie que fue guardada para ver más tarde:</h1>
+              <h2>Pelicula o serie que fue guardada para ver más tarde:</h2>
         <div class="row divmirar">
 
         </div>
@@ -96,9 +99,24 @@
       
       <div class="container mt-5" id="trailers">
       
-        <h1>Estos son los nuevos trailers:</h1>
+        <h2>Estos son los nuevos trailers:</h2>
   <div class="row ">
-
+    <div class="card" style="width: 18rem;">
+      <img src="imagen/calamar.jpg" class="card-img-top" alt="trailer de avengers 5">
+      <div class="card-body">
+        <h5 class="card-title">El juego del calamar : Temporada 2</h5>
+        <p class="card-text">Avengers: Endgame es el final de un larguísimo arco argumental de 22 películas llamado la Saga del Infinito que inició en 2008 con la primera película de Iron Man.</p>
+        <a href="https://www.youtube.com/watch?v=vty6WL_evqE" class="btn btn-primary">Ver Trailer</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="imagen/avengers.jpg" class="card-img-top" alt="trailer de avengers 5">
+      <div class="card-body">
+        <h5 class="card-title">Avengers 5: Secret Wars</h5>
+        <p class="card-text">Avengers: Endgame es el final de un larguísimo arco argumental de 22 películas llamado la Saga del Infinito que inició en 2008 con la primera película de Iron Man.</p>
+        <a href="https://www.youtube.com/watch?v=XVenxyTh9yU" class="btn btn-primary">Ver Trailer</a>
+      </div>
+    </div>
   </div>
 </div>
       </main>
